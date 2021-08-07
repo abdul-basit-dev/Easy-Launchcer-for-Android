@@ -1,0 +1,61 @@
+<com.my.androidlauncher.HomeView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:background="@color/Black_transparent"
+	android:id="@+id/home_view" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:background="@color/Black_transparent"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:textColor="@android:color/white"
+			android:text="@string/app_name"
+			android:textSize="24sp"
+			android:gravity="center"/>
+	</LinearLayout>
+
+	<SlidingDrawer
+		android:id="@+id/drawer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:handle="@+id/handle"
+		android:layout_marginTop="70dp"
+		android:content="@+id/content">
+
+		<ImageView
+			android:id="@+id/handle"
+			android:background="@drawable/ic_launcher"
+			android:layout_width="48dp"
+			android:layout_height="40dp"/>
+		<GridView
+			android:id="@+id/content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/Black_transparent"
+			android:columnWidth="90dp"
+			android:numColumns="auto_fit"
+			android:verticalSpacing="40dp"
+			android:horizontalSpacing="40dp"
+			android:stretchMode="columnWidth"
+			android:gravity="center"
+			/>
+
+	</SlidingDrawer>
+
+	<ImageView
+		android:id="@+id/trash"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:visibility="gone"
+		android:src="@drawable/ic_delete" />
+
+</com.my.androidlauncher.HomeView>
