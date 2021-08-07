@@ -1,1 +1,1 @@
-# Easy-Launchcer-for-Android
+# Easy-Launcher-for-Android
